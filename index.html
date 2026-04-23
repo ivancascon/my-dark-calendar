@@ -12,13 +12,18 @@
       overflow: hidden;
     }
     .wrap {
+      position: relative;
       width: 100%;
       height: 100vh;
+      overflow: hidden;
       filter: invert(1) hue-rotate(180deg) contrast(0.88) brightness(1.1) saturate(1.2);
     }
     iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
-      height: 100%;
+      height: calc(100% + 50px);
       border: 0;
       display: block;
     }
